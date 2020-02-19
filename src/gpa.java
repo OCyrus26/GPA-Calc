@@ -13,9 +13,6 @@ public class gpa {
 		double gradePoint = 0;
 		
 		
-			
-	
-		
 		while (!letterGrade.equalsIgnoreCase("Q")) 
 		{
 			System.out.println("Enter grade: ");
