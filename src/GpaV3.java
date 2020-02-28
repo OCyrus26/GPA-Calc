@@ -44,7 +44,8 @@ public class GpaV3 {
 				creditHours = scan.nextInt();
 
 				gradePoint2 = creditHours*gradePoint2;
-
+				
+				//prints GPA table 
 				transcript = transcript + "\n"+courseName+"\t" +creditHours + "\t"+ letterGrade +"\t"+gradePoint2+"\n";
 				totalHours = totalHours+creditHours;
 				totalGradePoints = totalGradePoints+gradePoint2;
@@ -60,12 +61,13 @@ public class GpaV3 {
 		gpa = (float) (totalGradePoints/totalHours);
 		System.out.println("Your GPA is: "+gpa);
 	}
-	
+    //method 
 	public static double gradeConvert (String letterGrade)
 	{
-		
+
 		double numberGrade = 0;
 		
+		//switch statement 
 		switch (letterGrade) 
 		{
 		case "A" : numberGrade = 4.00;
@@ -77,7 +79,7 @@ public class GpaV3 {
 		break;
 
 		case "B+" : numberGrade = 3.33;
-		
+
 		break;
 
 		case "B" : numberGrade = 3.00;
@@ -119,11 +121,11 @@ public class GpaV3 {
 
 		default: 
 		}
-		
-		
-		
-		
+
+
+
+
 		return numberGrade;
-		
+
 	}
 }
